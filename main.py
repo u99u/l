@@ -117,6 +117,7 @@ async def main():
             continue
         if username in file2:
             print('- Fragment : ' + username + ' .')
-            
+        continue
+        await start(client, username)    
 sessionL = input('[+] Enter Session : ')
 run(main())
